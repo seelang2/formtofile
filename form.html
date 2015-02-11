@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Sample Form</title>
+
+	<style type="text/css">
+	body {
+		font-family: Verdana, Arial, sans-serif;
+		color: #121212;
+		font-size: 125%;
+	}
+
+	h1 { font-weight: normal; }
+
+	input, button { font-size: 125%; }
+
+	form {
+		width: 500px;
+		margin: auto;
+		padding: 1em 2em;
+		border: 1px dotted #7a7a7a;
+	}
+
+	form label {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+
+	form label span,
+	form label input { 
+		display: inline-block;
+	}
+
+	form label span { width: 8em; }
+
+	form div {
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	</style>
+
+</head>
+<body>
+
+<h1>Save form data to file demo</h1>
+<p>This is a short demo that takes the form data below and saves it as a file on the server.</p>
+
+<form action="savedata.php" method="post">
+	<label>
+		<span>First Name:</span>
+		<input name="firstname" />
+	</label>
+	<label>
+		<span>Last Name:</span>
+		<input name="lastname" />
+	</label>
+	<label>
+		<span>Email:</span>
+		<input name="email" />
+	</label>
+	<div>
+		<!--<input type="submit" value="Save &rarr;" />-->
+		<button>Save &rarr;</button>
+	</div>
+</form> 
+
+</body>
+</html>
